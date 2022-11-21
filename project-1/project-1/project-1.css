@@ -1,0 +1,290 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.nav {
+    height: 100px;
+    width: 100%;
+    background-color:whitesmoke;
+}
+.logo {
+    height: 100px;
+    width: 30%;
+    line-height: 100px;
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+    float: left;
+}
+#logotext:hover {
+    color: orangered;
+}
+.list {
+  height: 100px;
+  width: 50%;
+  /* margin: 0px;
+  padding: 0px; */
+  float: left;
+  position: relative;  
+}
+
+.mainli {
+    list-style: none;
+    display: inline-flex;
+    line-height: 100px;
+}
+.li {
+    margin: 0px 25px 0px 25px;
+    font-size: 25px;
+    color: gray;
+}
+.li:hover {
+    color: orangered;
+}
+.button {
+    line-height: 100px;
+    float: left;
+    width: 20%; 
+    text-align: center;
+}
+.but1 {
+    height: 40px;
+    width: 200px;
+    font-size: large;
+    background-color: orangered;
+    color: white;
+    border: 0px;
+    border-radius: 10px;
+}
+.but1:hover {
+    background-color: darkred;
+}
+.main {
+    width: 100%;
+    height: auto;
+}
+.bggif {
+    position: sticky;
+}
+#vid1 {
+    position: relative;
+    width: 100%;
+    height: 600px;
+    opacity: .8;
+}
+.maintext {
+    position: absolute;
+    width: 50%;
+    float: left;
+    height: 600px;
+    top: 100px;
+}
+.text1 {
+    position: relative;
+    /* top: 100px; */
+    font-size: 40px;
+    /* left: 100px; */
+    color: white;
+    /* width: 50%; */
+    text-align: ;
+    height: 600px;
+}
+
+#subtext1 {
+    position: relative;
+    left: 100px;
+    top: 100px;
+    text-shadow: 7px 2px 5px black;
+}
+.text2 {
+    position: absolute;
+    top: 300px;
+    left: 100px;
+    color: chocolate;
+    text-shadow: 5px 2px 5px gray;
+    margin-top: 20px;
+}
+.poster {
+    position: absolute;
+    float: left;
+    width: 50%;
+    height: 600px;
+    top: 100px;
+    left: 50% ;
+}
+#poster {
+    position: relative;
+    width: 90%;
+    height: 70%;
+    top: 15%;
+}
+.artical
+{
+    height: 200px;
+    width: 100%;
+    text-align: center;
+    line-height: 200px;
+    left: 50%;
+    font-size: 60px;
+}
+.pictures {
+    height: 400px;
+    width: 100%;
+    position: relative;
+    margin: 0px;
+    padding: 0px;
+}
+.subdiv1 {
+    position: relative;
+    float: left;
+    width: 30%;
+    height: 400px;
+    margin: 1.5%;
+}
+.subdiv2 {
+    position: relative;
+    float: left;
+    width: 30%;
+    height: 400px;
+    margin: 1.5%;
+}
+.subdiv3 {
+    position: relative;
+    float: left;
+    width: 30%;
+    height: 400px;
+    margin: 1.5%;
+}
+.subtext1{
+    position: relative;
+    height: 20%;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+    line-height: 20%;
+    margin-top: 20px;
+    color: gray;
+}
+#pic1 {
+    height: 350px;
+    width: 100%;
+}
+.pic2 {
+    height: 350px;
+    width: 100%;
+}
+#pic3 {
+    height: 350px;
+    width: 100%;
+}
+.subtext2 {
+    position: relative;
+    height: 20%;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+    line-height: 20%;
+    margin-top: 20px;
+    color: gray;
+}
+.subtext3 {
+    position: relative;
+    height: 20%;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+    line-height: 20%;
+    margin-top: 20px;
+    color: gray;
+}
+.footer {
+    height: 500px;
+    width: 100%;
+    position: relative;
+    margin-top: 30px;
+    padding: 0%;
+}
+#footimg {
+    height: 500px;
+    width: 100%;
+    opacity: .8;
+}
+.footmain {
+    height: 500px;
+    width: 100%;
+    position: absolute;
+    top: 10px;
+}
+.footsub1 {
+    height: 500px;
+    width: 30%;
+    position: relative;
+    color: whitesmoke;
+    float: left;
+    margin: 1.5%;
+}
+.footsub2 {
+    height: 500px;
+    width: 30%;
+    position: relative;
+    color: whitesmoke;
+    float: left;
+    margin: 1.5%;
+}
+.footsub3 {
+    height: 500px;
+    width: 30%;
+    position: relative;
+    color: whitesmoke;
+    float: left;
+    margin: 1.5%;
+}
+#but {
+    height: 40px;
+    width: 40%;
+    border-radius: 5px;
+    margin-top: 20px;
+    font-size: 20px;
+    border: 0px;
+    background-color: darkgray;
+    color: whitesmoke;
+}
+#but:hover {
+    background-color: gray;
+    color: white;
+}
+#foottext1 {
+    position: relative;
+    /* line-height: 500px; */
+    left: 80px;
+    top: 135px;
+    text-shadow: 7px 2px 5px black;
+}
+
+#foottext2 {
+   position: relative;
+    /* line-height: 500px; */
+    left: 80px;
+    top: 135px;
+    text-shadow: 7px 2px 5px black;
+} 
+/* #icon1 {
+    height: 20px;
+    width: 20px;
+    position: absolute;
+} */
+
+#icon1:hover {
+    color: grey;
+}
+#foottext3 {
+    position: relative;
+    top: 135px;
+    text-shadow: 7px 2px 5px black;
+    left: 20px;
+}
