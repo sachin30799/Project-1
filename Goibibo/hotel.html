@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Goibibo</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body style="background-color: aliceblue;">
+    <!-- Navbar -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-1 logo">
+                <img src="/Goibibo/Assets-1/logo.jpg" class="logo-img">
+            </div>
+            <div class="col-md-6 nav mt-2 ms-5 ">
+                <a href="goibibo.html" type="button" class="btn btn-outline-primary rounded-pill m-2 mt-2 mb-2"><i
+                        class="fa fa-plane"></i>&nbsp Flights</a>
+                <a href="hotel.html" type="button" class="btn btn-outline-primary active rounded-pill m-2 mt-2 mb-2"><i
+                            class="fa fa-building"></i>&nbsp Hotels</a>
+                <a href="Train.html" type="button" class="btn btn-outline-primary rounded-pill m-2 mt-2 mb-2"><i
+                            class="fa fa-train"></i>&nbsp Trains</a>
+                <a href="Cabs.html" type="button" class="btn btn-outline-primary rounded-pill m-2 mt-2 mb-2"><i
+                                class="fa fa-car"></i>&nbsp Cabs</a>
+                <button type="button" class="btn btn-outline-primary rounded-pill  m-2 mt-2 mb-2"><i
+                        class="fa fa-bus"></i>&nbsp Bus</button>
+                <button type="button" class="btn btn-outline-primary rounded-pill  m-2 mt-2 mb-2"><i
+                        class="fa fa-usd"></i>&nbsp Forex</button>
+            </div>
+            <div class="col-md-2 ">
+                <div class="row">
+                    <div class="col-md-2 mt-2">
+                        <h3><i class="fa fa-suitcase lh-lg"></i></h3>
+                    </div>
+                    <div class="col-md-10 mt-2">
+                        My Trips
+                        <h6>Manage Booking</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2 mt-3 pb-2 ms-auto d-block">
+                <button type="button" class="btn btn-primary dropdown-toggle text-primary bg-white "
+                    data-bs-toggle="dropdown"><i class="fa fa-user-circle-o"></i> <b><span
+                            class="">LOGIN/SIGNIN</span></button></b></button>
+                <div class="dropdown-menu">
+                    <a href="" class="dropdown-item">Menu 3</a>
+                    <a href="" class="dropdown-item">Menu 4</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-- End of Navbar -->
+    <!-- main -->
+    <div class="container-fluid img">
+        <div class="container">
+            <div class="row text-white">
+                <p>
+                <h4>Book Hotels & Homestays</h4>
+                </p>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 text-muted main-box">
+                    <div class=" p-3 ms-1">
+                        <input type="radio" name="Opt" value="One-way"> <b> India </b> &nbsp; &nbsp;
+                        <input type="radio" name="Opt" value="Round-trip"> <b> International </b>
+                    </div>
+                    <h6 style="margin-left: 10px;">Where</h6>
+                    <div class="input-group ms-2">
+                        <input type="search" class="form-control  "
+                            placeholder="e.g. - Area, Landmark or Property Name " />
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="col-md-5 ms-2">
+                            <label for="">
+                                Checked-In
+                                <input type="date" class="form-control" placeholder="DEC 21,2022" />
+                            </label>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="">
+                                Checked-Out
+                                <input type="date" class="form-control" placeholder="DEC 21,2022" />
+                            </label>
+                        </div>  
+
+                    </div>
+                    <br>
+                    <H6 style="margin-left: 10px;">Guests & Rooms</H6>
+                    <input type="search" class="form-control ms-2 " placeholder="2 Adults | 0 Child | 1 Room" />
+                    <div class="text-center">
+                        <button class="btn1 mt-2 w-50 fs-3">Search</button>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="row pb-5 p-2 ">
+                        <img src="/Goibibo/Assets-1/cab-pic.webp" height="100%" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+    <!-- End of Carousel -->
+    <div class="container mt-5 p-5">
+        <div class="row main-box pt-3 p-2 mt-5 ">
+            <div class="col-md-2 btn border-bottom  my-2">Beach Vacations</div>
+            <div class="col-md-2 btn border-bottom  my-2">Weekend Getaways</div>
+            <div class="col-md-2 btn border-bottom  my-2">Mountains Calling</div>
+            <div class="col-md-2 btn border-bottom  my-2">Stay Like Royals</div>
+            <div class="col-md-2 btn border-bottom  my-2">Indian Pilgrimages</div>
+            <div class="col-md-2 btn border-bottom  my-2">Party Destinations</div>
+        </div>
+        <div class="row main-box pt-2 p-3">
+            <div id="deal-card-carousel3" class="carousel carousel-dark slide" data-bs-ride="#deal-card-carousel3">
+
+                <div class="carousel-inner align-center padding-top-bottom-20">
+                    <div class="carousel-item active" data-bs-interval="10000">
+
+                        <div class="row row row-cols-1 row-cols-md-4 g-4 align-center">
+
+                            <div class="deal-card">
+                                <div class="card">
+                                    <img src="/Goibibo/Assets-1/sl-1.webp" class="card-img-top deal-card-img" alt="">
+                                    <div class="card-body position-relative d-flex">
+                                        <div class="card-cont">
+                                            <h5>Maldives</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="deal-card">
+                                <div class="card">
+                                    <img src="/Goibibo/Assets-1/sl-2.0.webp" class="card-img-top deal-card-img" alt="">
+                                    <div class="card-body position-relative d-flex">
+                                        <div class="card-cont">
+                                            <h5>Northwestern USA</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="deal-card">
+                                <div class="card">
+                                    <img src="/Goibibo/Assets-1/sl-7.webp" class="card-img-top deal-card-img" alt="">
+                                    <div class="card-body position-relative d-flex">
+                                        <div class="card-cont">
+                                            <h5>Queensland</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="deal-card">
+                                <div class="card">
+                                    <img src="/Goibibo/Assets-1/sl-4.webp" class="card-img-top deal-card-img" alt="">
+                                    <div class="card-body position-relative d-flex">
+                                        <div class="card-cont">
+                                            <h5>Hawaii</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="2000">
+
+                        <div class="row row-cols-1 row-cols-md-4 g-1 align-center">
+
+                            <div class="deal-card">
+                                <div class="card">
+                                    <img src="/Goibibo/Assets-1/sl-6.webp" class="card-img-top deal-card-img" alt="">
+                                    <div class="card-body position-relative d-flex">
+                                        <div class="card-cont">
+                                            <h5>Turks & Caicos</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="deal-card">
+                                <div class="card">
+                                    <img src="/Goibibo/Assets-1/sl-5.webp" class="card-img-top deal-card-img" alt="">
+                                    <div class="card-body position-relative d-flex">
+                                        <div class="card-cont">
+                                            <h5>Thailand</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="deal-card">
+                                <div class="card">
+                                    <img src="/Goibibo/Assets-1/sl-8.webp" class="card-img-top deal-card-img" alt="">
+                                    <div class="card-body position-relative d-flex">
+                                        <div class="card-cont">
+                                            <h5>The Seychelles</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="deal-card">
+                                <div class="card">
+                                    <img src="/Goibibo/Assets-1/sl-9.webp" class="card-img-top deal-card-img" alt="">
+                                    <div class="card-body position-relative d-flex">
+                                        <div class="card-cont">
+                                            <h5>The Philippins</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#deal-card-carousel3"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#deal-card-carousel3"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </div>
+    <!-- label -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-8 label3"></div>
+        </div>
+    </div>
+    <!-- lable end -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 mt-4">
+                <h4>goStays</h4>
+                <p>100% Money Back Guarantee* | Hassle-Free Check-in</p>
+            </div>
+        </div>
+    </div>
+    <!-- Posters -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 p-3 mt-2">
+                <img src="/Goibibo/Assets-1/poster--1.webp" width="100%" style="border-radius: 10px;" alt="">
+            </div>
+            <div class="col-md-4 mt-3">
+                <div class="poster-1 p-2 mt-1">
+                    <img src="/Goibibo/Assets-1/poster--2.jpg" width="100%" style="border-radius: 10px;" alt="">
+                </div>
+                <div class="poster-2 p-2 mt-4">
+                    <img src="/Goibibo/Assets-1/poster-3.jpg" width="100%" style="border-radius: 10px;" alt="">
+                </div>
+            </div>
+            <div class="col-md-4 mt-3">
+                <div class="poster-3 p-2 mt-1">
+                    <img src="/Goibibo/Assets-1/poster--4.jpg" width="100%" style="border-radius: 10px;" alt="">
+                </div>
+                <div class="poster-4 p-2 mt-4">
+                    <img src="/Goibibo/Assets-1/poster-5.jpg" width="100%" style="border-radius: 10px;" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 mt-1 p-1">
+                <div class="poster-5  p-2">
+                    <img src="/Goibibo/Assets-1/poster-6.jpg" width="100%" style="border-radius: 10px;" alt="">
+                </div>
+                <div class="poster-6 mt-3 p-2">
+                    <img src="/Goibibo/Assets-1/poster-7.jpg" width="100%" style="border-radius: 10px;" alt="">
+                </div>
+            </div>
+            <div class="col-md-4 mt-1 p-1">
+                <div class="poster-5 p-2">
+                    <img src="/Goibibo/Assets-1/poster--8.jpg" width="100%" style="border-radius: 10px;" alt="">
+                </div>
+                <div class="poster-6 mt-3 p-2">
+                    <img src="/Goibibo/Assets-1/poster-9.jpg" width="100%" style="border-radius: 10px;" alt="">
+                </div>
+            </div>
+            <div class="col-md-4 px-4 p-3">
+                <img src="/Goibibo/Assets-1/poster-10.avif" width="100%" style="border-radius: 10px;" alt="">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 px-4 p-3">
+                <img src="/Goibibo/Assets-1/poster-11.jpeg" width="100%" style="border-radius: 10px;" alt="">
+            </div>
+            <div class="col-md-4 p-2">
+                <div class="poster-5  p-2">
+                    <img src="/Goibibo/Assets-1/poster-12.jpg" width="100%" style="border-radius: 10px;" alt="">
+                </div>
+                <div class="poster-6 mt-3 p-2">
+                    <img src="/Goibibo/Assets-1/poster-13.jpg" width="100%" style="border-radius: 10px;" alt="">
+                </div>
+            </div>
+            <div class="col-md-4 p-2">
+                <div class="poster-5  p-2">
+                    <img src="/Goibibo/Assets-1/poster-14.jpg" width="100%" style="border-radius: 10px;" alt="">
+                </div>
+                <div class="poster-6 mt-3 p-2">
+                    <img src="/Goibibo/Assets-1/poster-15.jpg" width="100%" style="border-radius: 10px;" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End of Posters -->
+    <div class="container mt-3 main-box">
+        <div class="row">
+            <div class="col-md-12 mt-4">
+                <h5><b>Hotel Booking FAQs</b></h5>
+            </div>
+            <div class="col-md-12 text-muted mt-3">
+                <p><span class="border rounded">&nbsp;Q&nbsp;</span><b> What are the advantages of online hotel
+                        booking?</b></p>
+                <p><span class="border rounded">&nbsp;A&nbsp;</span> Online hotel booking comes with great advantages
+                    for travellers.</p>
+                <p>&nbsp; 1.You can book hotels in India or even International hotels sitting at home in few simple
+                    clicks
+                    <br>
+                    &nbsp; 2.You can quickly check reviews, images, ratings and amenities of all the hotels at one place
+                    and compare hotels to suit your preferences for hotel booking <br>
+                    &nbsp; 3.You can avail great discounts and offers on hotel booking through Goibibo <br>
+                    &nbsp; 4.Avoiding the last-minute hotel search in an unknown city with high prices, you can book a
+                    suitable stay for yourself at reasonable prices online <br>
+                    &nbsp; 5.You can avail attractive deals and cashback offers on digital payment options like credit
+                    cards, debit cards and e-wallets <br>
+                    &nbsp; 6.You can customize your hotel to stay with plenty of room plans available <br>
+                    &nbsp; 7.You can read the hotel policies online and experience a hassle-free stay
+                    <br><br>
+                    <hr>
+                </p>
+            </div>
+            <div class="col-md-12 text-muted mt-3">
+                <p><span class="border rounded">&nbsp;Q&nbsp;</span><b> In current situation of Corona pandemic (Covid
+                        19), where can we find safe and well sanitized hotels?</b></p>
+                <p><span class="border rounded">&nbsp;A&nbsp;</span> Goibibo in collaboration with various hotels have
+                    introduced goSafe Hotels, a collection of well sanitized hotels with trained staff who follow safe
+                    Practices at all times. These hotels have a Safe and Hygienic environment with daily disinfection of
+                    rooms, fresh room linens, regular sanitization of common areas, safe kitchen practices, maintenance
+                    of social distancing, guest and staff temperature check. The staff is trained on safe Practices and
+                    equipped with masks and gloves at all times. Some of the popular cities where you can find these
+                    safe and hygienic hotels are Goa, Mumbai, Delhi, Bangalore and many more. You can choose from wide
+                    variety of these well sanitised and clean hotels on Goibibo at best prices.</p>
+                <hr>
+            </div>
+            <div class="col-md-12 text-muted mt-3">
+                <p><span class="border rounded">&nbsp;Q&nbsp;</span><b> What are the popular Indian cities which are
+                        frequently visited by people?</b></p>
+                <p><span class="border rounded">&nbsp;A&nbsp;</span> India has been popular among visitors as it offers
+                    wide spectrum of experiences and landscapes. People travel in India for 3 main purposes: Business,
+                    Leisure & Religious.
+                    <br>
+                    Some of the popular Indian cities which visitors travel for Business purpose are Mumbai, Delhi,
+                    Bangalore, Ahmedabad, Kolkata, Pune and Hyderabad. These cities are pillars of India for all
+                    economic activities. These cities have plethora of Hotels which are suitable for all kind of
+                    business travellers looking for Hotel Booking. You can easily book <a href="">Hotels in Delhi,
+                        Hotels in Mumbai, Hotels in Bangalore, Hotels in Pune, Hotels in Hyderabad</a>and in many other
+                    cities from Goibibo.
+                    <br>
+                    Similarly, there are various Indian cities which are famous for Leisure travel. Popular ones are
+                    Goa, Jaipur, Manali, Pondicherry, Ooty and Nainital. These cities also have wide variety of Hotel
+                    and alternate accommodation options for Couples and families. Goibibo is best platform to book <a
+                        href=""> Hotels in Goa, Hotels in Jaipur, Hotels in Manali, Hotels in Pondicherry, Hotels in
+                        Nainital</a>and many such leisure cities.
+                    <br>
+                    India being a country of diversified culture and religions, has many popular religious places. Some
+                    of these popular cities where visitors travel for religious purpose are Katra, Shirdi, Amritsar,
+                    Tirupati and Puri. These cities have also huge options in accommodation, right from budget category
+                    hotels to Luxury Hotels. Goibibo makes online hotel booking convenient for booking <a href="">Hotels
+                        in Katra, Hotels in Shirdi, Hotels in Amritsar, Hotels in Tirupati, Hotels in Puri</a> and many
+                    other such cities in India.
+                </p>
+                <hr>
+            </div>
+            <div class="col-md-12 text-muted mt-3">
+                <p><span class="border rounded">&nbsp;Q&nbsp;</span><b> What are the popular International Cities for
+                        Online Hotel Booking?</b></p>
+                <p><span class="border rounded">&nbsp;A&nbsp;</span> There are various cities in the World which are
+                    famous among travellers. Some of these popular International cities which see a lot of demand in
+                    Online Hotel Booking business are Dubai, Singapore, Phuket, Maldives, Paris, London and Bali.
+                    Goibibo has huge number of hotels on its platform available for booking <a href="">Hotels in Dubai,
+                        Hotels in Singapore, Hotels in Phuket, Hotels in Maldives, Hotels in Paris, Hotels in Bali</a>
+                    and even many more International cities. Customers can easily book these hotels on Goibibo with the
+                    convenience of multiple payment options.
+                    <br>
+                    Goibibo being a leading travel website in India has the largest number of hotels on its platform.
+                    Not just great prices and great offers, but Goibibo also has the largest collection of hotel
+                    reviews, which is very useful in terms of choosing a right hotel for your stay. Goibibo makes online
+                    hotel booking even more convenient by offering Free Cancellation, Instant Refund and 24 hour
+                    customer support.
+                </p>
+                <hr>
+            </div>
+            <div class="col-md-12 text-muted mt-3">
+                <p><span class="border rounded">&nbsp;Q&nbsp;</span><b> How can I do a hotel booking at the lowest price
+                        through Goibibo?</b></p>
+                <p><span class="border rounded">&nbsp;A&nbsp;</span> Goibibo offers a smooth and hassle-free hotels
+                    booking process at the lowest prices. Visit the Goibibo website or app and enter the city name,
+                    check-in and check-out date and room requirements under the hotel section. A range of hotels from
+                    luxury to budget ones will be displayed. You can customize your search basis the price range, star
+                    category, location and other relevant filters and book the best-suited hotel as per your
+                    preference.Goibibo presents offers exciting offers and discounts on hotel booking The discount codes
+                    are updated regularly under various deals. Besides this, you can also utilise your GoCash to book
+                    hotels online at the lowest prices on Goibibo. The user-friendly Goibibo site and application also
+                    has a loyalty programme which says 'The more goCash you earn, the more rewards you get by reaching
+                    different levels.' The levels range from Bronze to Titanium. The different levels are;
+                    Bronze-Silver-Gold-Platinum-Titanium. Each level has its benefits and you can utilise them for
+                    availing maximum discount while hotels booking.</p>
+                <hr>
+            </div>
+            <div class="col-md-12 text-muted mt-3">
+                <p><span class="border rounded">&nbsp;Q&nbsp;</span><b> How can I earn and use GoCash on hotel booking
+                        on Goibibo?</b></p>
+                <p><span class="border rounded">&nbsp;A&nbsp;</span>You can earn goCash by inviting your friends,
+                    referring them and syncing your contacts each time you book a hotel online. You can also earn goCash
+                    by helping others on the Goibibo platform with their booking related queries. It is important to
+                    note that there is eligibility on utilising goCash whilst hotel booking. Your gocash+Rewards level
+                    is calculated based on eligible goCash + whatever you've earned in the ongoing month + last 12
+                    months. While booking hotel online through Goibibo, the available goCash in your wallet gets
+                    auto-applied.</p>
+                <hr>
+            </div>
+            <div class="col-md-12 text-muted mt-3">
+                <p><span class="border rounded">&nbsp;Q&nbsp;</span><b> Is online hotel booking safe and reliable?</b>
+                </p>
+                <p><span class="border rounded">&nbsp;A&nbsp;</span>Being an easy and time-effective process, online
+                    hotel booking is widely preferred. Booking Hotels online is safe and reliable, provided that you
+                    rely on a reputed travel website for your online hotel bookings. Goibibo is a trustworthy online
+                    hotel booking platform which has numerous filters to help you choose the best and most suitable
+                    hotel as per your budget and preference. You can go through the star ratings, reviews and
+                    travellers' images of a particular hotel to make the best decision. Goibibo also offers 'Gostays
+                    accommodations' that come with a money-back guarantee. Gostays accommodations include free wifi, AC,
+                    breakfast, TV and good hygiene. Thus, you can always choose 'Gostays accommodations' at your
+                    convenience.</p>
+                <hr>
+            </div>
+            <div class="col-md-12 text-muted mt-3">
+                <p><span class="border rounded">&nbsp;Q&nbsp;</span><b> Is it ok to choose 'Pay at hotel' option for an
+                        online hotel booking?</b></p>
+                <p><span class="border rounded">&nbsp;A&nbsp;</span>Like prepaid bookings, pay at hotel option is also
+                    safe and reliable. It's free of cost. Though, the added advantage of choosing pay at hotel option is
+                    that you get the privilege of cancelling the hotel if you don't like its quality. However, it is
+                    important to go through all the booking and cancellation related terms and conditions carefully.</p>
+                <hr>
+            </div>
+            <div class="col-md-12 text-muted mt-3">
+                <p><span class="border rounded">&nbsp;Q&nbsp;</span><b> Where can I check discounts and offers on
+                        Goibibo for hotels booking?</b></p>
+                <p><span class="border rounded">&nbsp;A&nbsp;</span>There are numerous discount offers, promo codes and
+                    deals on online hotel booking through Goibibo. Although, all of these are valid for a limited
+                    period, hence, it is advised to check the current offers before booking the hotel. The current
+                    offers are displayed on the hotel page of the Goibibo website and app.</p>
+                <hr>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid bg-white">
+        <div class="row">
+            <div class="col-md-2 ms-3 mt-4">
+                <div class="footer-1 text-muted">
+                    <strong>ABOUT US</strong>
+                    <br><br>
+                    <a href="" style="text-decoration: none;">Domestic Hotels</a>
+                    <br>
+                    <a href="" style="text-decoration: none;">International Hotels</a>
+                    <br>
+                    International Flights
+                    <br>
+                    Bus Booking
+                    <br>
+                    <a href="" style="text-decoration: none;">Cab Booking</a>
+                    <br>
+                    <a href="" style="text-decoration: none;">Train ticket Booking</a>
+                    <br>
+                    Route Planner
+                    <br>
+                    Destination Planner
+                    <br>
+                    Cheap Flights
+                    <br>
+                    Train Running Status
+                    <br>
+                    PNR Status
+                    <br>
+                    Airport Cabs
+                    <br>
+                    Hotels in India
+                    <br>
+                    Hotels near me
+                    <br>
+                    Popular Airlines
+                    <br>
+                    IRCTC Forgot UserID
+                    <br>
+                    TRCTC Forgot Password
+                </div>
+            </div>
+            <div class="col-md-3 ms-3 mt-4">
+                <div class="footer-2 text-muted">
+                    <strong>COMPANY</strong>
+                    <br><br>
+                    About Us
+                    <br>
+                    Terms & Services
+                    <br>
+                    <a href="" style="text-decoration: none;">Cab Booking</a>
+                    <br>
+                    <a href="" style="text-decoration: none;">Train ticket Booking</a>
+                    <br>
+                    Route Planner
+                    <br>
+                    Destination Planner
+                    <br>
+                    Cheap Flights
+                    <br>
+                    Train Running Status
+                    <br>
+                    PNR Status
+                    <br>
+                    Airport Cabs
+                    <br>
+                    Hotels in India
+                    <br>
+                    Hotels near me
+                    <br>
+                    Popular Airlines
+                    <br>
+                    IRCTC Forgot UserID
+                    <br>
+                    TRCTC Forgot Password
+                </div>
+            </div>
+            <div class="col-md-3 ms-3 mt-4">
+                <div class="footer-1 text-muted">
+                    <strong>TRENDING HOTEL CITIES</strong>
+                    <br><br>
+                    <a href="" style="text-decoration: none;">Hotels in Goa</a>
+                    <br>
+                    <a href="" style="text-decoration: none;">Hotels in Delhi</a>
+                    <br>
+                    Hotels in Mumbai
+                    <br>
+                    <a href="" style="text-decoration: none;">Hotels in Bangalore</a>
+                    <br>
+                    Hotels in Hyderabad
+                    <br>
+                    Hotels in Pune
+                    <br>
+                    Hotels in Agra
+                    <br>
+                    Hotels in Jaipur
+                    <br>
+                    Hotels in Ahmedabad
+                    <br>
+                    Hotels in Mysore
+                    <br>
+                    Hotels in Munner
+                    <br>
+                    Hotels in Chennai
+                    <br>
+                    Hotels in Madurai
+                    <br>
+                    Hotels in Kolkata
+                    <br>
+                    Hotels in Ooty
+                    <br>
+                    Hotels in Mahabaleshwar
+                    <br>
+                    Hotels in Shimla
+                    <br>
+                    <a href="" style="text-decoration: none;">Hotels in Manali</a>
+                    <br>
+                    Hotels in Nainital
+                </div>
+            </div>
+            <div class="col-md-3 ms-3 mt-4">
+                <div class="footer-1 text-muted">
+                    <strong>TRENDING IN. HOTEL CITIES</strong>
+                    <br><br>
+                    Hotels in Dubai
+                    <br>
+                    Hotels in Singapore
+                    <br>
+                    Hotels in Bangkok
+                    <br>
+                    Hotels in Kathmandu
+                    <br>
+                    Hotels in Pattaya
+                    <br>
+                    <a href="" style="text-decoration: none;">Hotels in Krabi</a>
+                    <br>
+                    Hotels in Paris
+                    <br>
+                    <a href="" style="text-decoration: none;">Hotels in London</a>
+                    <br>
+                    <a href="" style="text-decoration: none;">Hotels in Amsterdam</a>
+                    <br>
+                    Hotels in Colombo
+                    <br>
+                    <a href="" style="text-decoration: none;">Hotels in Maldives</a>
+                    <br>
+                    Hotels in Rome
+                    <br>
+                    Hotels in Bali
+                    <br>
+                    Hotels in Hong Kong
+                    <br>
+                    Hotels in Kuala Lumpur
+                    <br>
+                    Hotels in Abu Dhabi
+                    <br>
+                    Hotels in Moscow
+                    <br>
+                    Hotels in Zurich
+                    <br>
+                    Hotels in Dhaka
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-md-3">
+                <b>FOLLOW US</b><br>
+                <i class="fa fa-2x text-muted fa-facebook-square"></i> &nbsp;
+                <i class="fa fa-2x text-muted fa-twitter"></i>&nbsp;
+                <i class="fa fa-2x text-muted fa-youtube-play"></i>
+            </div>
+            <div class="col-md-5 p-2">
+                <b>Book Tickets faster. Download our mobile Apps</b><br>
+                <img src="/Goibibo/Assets-1/playstore.png" width="31%"> &nbsp;
+                <img src="/Goibibo/Assets-1/appstore.png" width="28%">
+            </div>
+            <div class="col-md-4 p-2 mt-2">
+                <img src="/Goibibo/Assets-1/mastercard.jpg" width="15%"> &nbsp;
+                <img src="/Goibibo/Assets-1/visa.jpg" width="15%"> &nbsp;
+                <img src="/Goibibo/Assets-1/rupay.png" width="15%"> &nbsp;
+                <img src="/Goibibo/Assets-1/iata.png" width="15%">
+                <br><br>
+            </div>
+            <hr>
+        </div>
+        <div class="row">
+            <div class="col-md-4 p-2 foot">
+                <img src="/Goibibo/Assets-1/makemytrip.webp" width="30%"> &nbsp;
+                <img src="/Goibibo/Assets-1/redbus.png" width="30%">
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,1195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project -2</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body style="background-color: aliceblue;">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-1 logo">
+                <img src="logo.jpg" class="logo-img">
+            </div>
+            <div class="col-md-6 nav mt-2 ms-5 ">
+                <button type="button" class="btn btn-outline-primary active rounded-pill m-2 mt-2 mb-2"><i
+                        class="fa fa-plane"></i>&nbsp Flights</button>
+                <a href="hotel.html" type="button" class="btn btn-outline-primary rounded-pill  m-2 mt-2 mb-2"><i
+                        class="fa fa-building"></i>&nbsp Hotels</a>
+                <button type="button" class="btn btn-outline-primary rounded-pill  m-2 mt-2 mb-2"><i
+                        class="fa fa-train"></i>&nbsp Trains</button>
+                <button type="button" class="btn btn-outline-primary rounded-pill  m-2 mt-2 mb-2"><i
+                        class="fa fa-car"></i>&nbsp Cabs</button>
+                <button type="button" class="btn btn-outline-primary rounded-pill  m-2 mt-2 mb-2"><i
+                        class="fa fa-bus"></i>&nbsp Bus</button>
+                <button type="button" class="btn btn-outline-primary rounded-pill  m-2 mt-2 mb-2"><i
+                        class="fa fa-usd"></i>&nbsp Forex</button>
+            </div>
+            <div class="col-md-2 ">
+                <div class="row">
+                    <div class="col-md-2 mt-2">
+                        <h3><i class="fa fa-suitcase lh-lg"></i></h3>
+                    </div>
+                    <div class="col-md-10 mt-2">
+                        My Trips
+                        <h6>Manage Booking</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2 mt-3 ms-auto d-block">
+                <button type="button" class="btn btn-primary dropdown-toggle text-primary bg-white "
+                    data-bs-toggle="dropdown"><i class="fa fa-user-circle-o"></i> <b><span
+                            class="">LOGIN/SIGNIN</span></button></b></button>
+                <div class="dropdown-menu">
+                    <a href="" class="dropdown-item">Menu 3</a>
+                    <a href="" class="dropdown-item">Menu 4</a>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="container-fluid bg-primary">
+            <div class="row">
+                <div class="col-12 text-center fw-bold fs-4 mb-3 mt-3 text-white bg-primary">
+                    Book Domestic and International Flight Tickets
+                </div>
+            </div>
+        </div> -->
+    </div>
+    </div>
+
+    <!-- <div class="container-fluid">
+        <div class="row" id="main-row">
+            <p><h5 style="text-align: center;">Book Domestic and International Flight Tickets</h5></p>
+                <div class="container-fluid">
+                    <div class="row">
+                       <div class="col-4 topic-1">
+                        <input type="radio">One-Way
+                       </div> 
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <div class="container-fluid img">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <p>
+                <h5>Book Domestic and International Flight Tickets
+                </h5>
+                </p>
+                <div class="container main-box">
+                    <div class="row">
+                        <!-- <div class="col-md-12 m-3 ms-3 p-2 text-start box-2 d-flex">
+                            <div class=" p-3"> <input type="radio" value="radio"> One-way</div>
+                            <div class=" p-3"> <input type="radio" value="radio"> Round-trip</div>
+                            <div class=" p-3"> <input type="radio" value="radio"> Multi-city</div>
+                        </div> -->
+                        <div class="container mt-3 m-3 form-group">
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1"
+                                    checked />
+                                <label class="form-check-label" for="flexRadioDefault1">
+                                    One Way
+                                </label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" />
+                                <label class="form-check-label" for="flexRadioDefault2">
+                                    Round-trip
+                                </label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3" />
+                                <label class="form-check-label" for="flexRadioDefault3">
+                                    Multi-city
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="textOnInput">
+                                <label for="inputText">From</label>
+                                <input class="form-control b1" type="text" placeholder="Enter your city or airport">
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="textOnInput">
+                                <label for="inputText">To</label>
+                                <input class="form-control b1" type="text" placeholder="Enter your city or airport">
+                            </div>
+                        </div>
+
+                        <div class="col-md-2">
+                            <div class="textOnInput">
+                                <label for="inputText">Departure</label>
+                                <input class="form-control b1" type="date">
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="textOnInput">
+                                <label for="inputText">Return</label>
+                                <input class="form-control b1" type="date">
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="textOnInput">
+                                <label for="inputText">Travellers & Class</label>
+                                <input class="form-control b1" type="text">
+                            </div>
+                        </div>
+                    </div>
+                    <form action="">
+                        <div class="form-check-inline my-3">
+                            <label class="form-check-label">Select A <br> Fare Type:</label>
+                            <label class="form-check-label  ">
+                                <input type="radio" class="form-check-input" value="" name="radio"> Regular
+                            </label>
+                        </div>
+                        <div class="form-check-inline my-3">
+                            <label class="form-check-label">
+                                <input type="radio" class="form-check-input" value="" name="radio"> Armed Forces
+                            </label>
+                        </div>
+                        <div class="form-check-inline my-3">
+                            <label class="form-check-label">
+                                <input type="radio" class="form-check-input" value="" name="radio"> Senior Cityzen
+                            </label>
+                        </div>
+                        <div class="form-check-inline my-3">
+                            <label class="form-check-label">
+                                <input type="radio" class="form-check-input" value="" name="radio"> Students
+                            </label>
+                        </div>
+                        <div class="form-check-inline my-3">
+                            <label class="form-check-label">
+                                <input type="radio" class="form-check-input" value="" name="radio"> Doctors & Nurses
+                            </label>
+                        </div>
+                        <div class="form-check-inline my-3">
+                            <label>Trending Search:</label>
+                            <button class="btn btn-outline-primary form-check-inline">Bengaluru To Mumbai</button>
+                        </div>
+                        <div class="text-center">
+                            <button class="btn1 fs-3">Search Flights</button>
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+    </div>
+    <div class="container label w-75 mt-5"></div>
+    <div class="container-fluid img2 mt-5">
+        <!-- <div class="row">
+            <div class="col-12 text-center">
+                <p>
+                <h5>Offers For You</h5>
+                </p>
+            </div>
+            <div class="container main-box2">
+                <div class="row">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-8 nav  ms-5 ">
+                                <button type="button" class="btn border-info m-2 mt-2 mb-2">&nbsp All</button>
+                                <button type="button" class="btn border-info  m-2 mt-2 mb-2">&nbsp Hotels</button>
+                                <button type="button" class="btn border-info m-2 mt-2 mb-2">&nbsp Trains</button>
+                                <button type="button" class="btn border-info m-2 mt-2 mb-2">&nbsp Cabs</button>
+                                <button type="button" class="btn border-info m-2 mt-2 mb-2">&nbsp Bus</button>
+                                <button type="button" class="btn border-info m-2 mt-2 mb-2">&nbsp Forex</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>   
+            </div>
+        </div> -->
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <p>
+                <h5> <b>Offers For You</b></h5>
+                </p>
+                <div class="container main-box mb-2">
+                    <div class="row">
+                        <div class="col-md-8 mt-3 nav  ms-5 ">
+                            <button type="button" class="btn fa-border btn-outline-primary rounded-pill m-2 mt-2 mb-2">
+                                <b> &nbsp All</b></button>
+                            <button type="button" class="btn fa-border btn-outline-primary rounded-pill m-2 mt-2 mb-2">
+                                <b> &nbsp
+                                    Hotels</b></button>
+                            <button type="button"
+                                class="btn fa-border btn-outline-primary rounded-pill m-2 mt-2 mb-2"><b>&nbsp
+                                    Trains</b></button>
+                            <button type="button"
+                                class="btn fa-border btn-outline-primary rounded-pill m-2 mt-2 mb-2"><b>&nbsp
+                                    Cabs</b></button>
+                            <button type="button"
+                                class="btn fa-border btn-outline-primary rounded-pill m-2 mt-2 mb-2"><b>&nbsp
+                                    Bus</b></button>
+                            <button type="button"
+                                class="btn fa-border btn-outline-primary rounded-pill m-2 mt-2 mb-2"><b>&nbsp
+                                    Forex</b></button>
+                        </div>
+                        <div class="col-md-2 mt-4 nav  ms-5 ">
+                            <button type="button" class="btn fa-border btn-outline-primary  rounded-pill "> <b> &nbsp
+                                    See All
+                                    Offers></b></button>
+                        </div>
+                    </div>
+                    <div class="offer-for-you">
+                        <div id="offer-card" class="carousel carousel-dark slide" data-bs-ride="carousel">
+
+                            <div class="carousel-inner">
+                                <div class="carousel-item active" data-bs-interval="10000">
+
+                                    <div class="row row-cols-1 row-cols-md-2 g-4">
+                                        <div class="col">
+                                            <div class="card h-100">
+                                                <ul class="list-group list-group-flush">
+                                                    <li class="list-group-item">
+                                                        <div class="row g-0">
+                                                            <div class="col-md-4">
+                                                                <img src="pic-1.webp" class="img-fluid rounded-start"
+                                                                    alt="...">
+                                                            </div>
+                                                            <div class="col-md-8">
+                                                                <div class="card-body">
+                                                                    <h5 class="card-title"> <b> Domestic Hotels</b></h5>
+                                                                    <p class="card-text"> <b> Get Up to 40% OFF</b></p>
+                                                                    <p class="card-text text-danger"><small> <b> Limited
+                                                                                Time Offer</b></small></p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="list-group-item d-flex text-primary align-center"><b>Copy
+                                                            &
+                                                            Book: GOVASOOL </b>
+                                                        <div class="triangle"></div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="card h-100">
+                                                <ul class="list-group list-group-flush">
+                                                    <li class="list-group-item">
+                                                        <div class="row g-0">
+                                                            <div class="col-md-4">
+                                                                <img src="pic-2.jpg" class="img-fluid rounded-start"
+                                                                    alt="...">
+                                                            </div>
+
+                                                            <div class="col-md-8">
+                                                                <div class="card-body">
+                                                                    <h5 class="card-title"> <b> Domestic Flights</b>
+                                                                    </h5>
+                                                                    <p class="card-text"> <b> And Grab Amazing
+                                                                            Discounts</b>
+                                                                        <b>&#38;</b>
+                                                                    </p>
+                                                                    <p class="card-text"> <b> Benifits </b></p>
+                                                                    <p class="card-text text-danger"><small> <b> Limited
+                                                                                Time
+                                                                                Offer</b></small></p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="list-group-item d-flex text-primary align-center"><b>Copy
+                                                            &
+                                                            Book: GODOUBLE </b>
+                                                        <div class="triangle"></div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                                <div class="carousel-item" data-bs-interval="2000">
+
+                                    <div class="row row-cols-1 row-cols-md-2 g-4">
+                                        <div class="col">
+                                            <div class="card h-100">
+                                                <ul class="list-group list-group-flush">
+                                                    <li class="list-group-item">
+                                                        <div class="row g-0">
+                                                            <div class="col-md-4">
+                                                                <img src="pic-3.jpg" class="img-fluid rounded-start"
+                                                                    alt="...">
+                                                            </div>
+                                                            <div class="col-md-8">
+                                                                <div class="card-body">
+                                                                    <h5 class="card-title"> <b> Domestic Hotels</b></h5>
+                                                                    <p class="card-text"> <b> Get Up to 40% OFF</b></p>
+                                                                    <p class="card-text text-danger"><small> <b>Limited
+                                                                                Time Offer</b></small></p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="list-group-item d-flex text-primary align-center"><b>Copy
+                                                            &
+                                                            Book: GOVASOOL </b>
+                                                        <div class="triangle"></div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="card h-100">
+                                                <ul class="list-group list-group-flush">
+                                                    <li class="list-group-item">
+                                                        <div class="row g-0">
+                                                            <div class="col-md-4">
+                                                                <img src="pic-4.jpg" class="img-fluid rounded-start"
+                                                                    alt="...">
+                                                            </div>
+
+                                                            <div class="col-md-8">
+                                                                <div class="card-body">
+                                                                    <h5 class="card-title"> <b> Domestic Flights</b>
+                                                                    </h5>
+                                                                    <p class="card-text"><b> And Grab Amazing Discounts
+                                                                            &#38;</p></b>
+                                                                    <p class="card-text"> <b> Benifits </b></p>
+                                                                    <p class="card-text text-danger"><small> <b> Limited
+                                                                                Time
+                                                                                Offer </b></small></p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="list-group-item d-flex text-primary align-center"><b>Copy
+                                                            &
+                                                            Book: GODOUBLE </b>
+                                                        <div class="triangle"></div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+
+
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#offer-card"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#offer-card"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- slider-2 -->
+    <div class="container-fluid img2">
+        <div class="row">
+            <div class="col-md-12 mt-2">
+                <div class="container p1 rounded-3">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="deals-banner-img">
+                                <img src="deal.webp" id="deal">
+                            </div>
+                        </div>
+                        <div class="col-md-4"></div>
+                        <div class=" clock col-3">
+                            <img src="Clock_image.webp" alt="">
+                            <span class="deal-count-down bg-white rounded-2 ">
+                                <b>Ends in &nbsp;</b>
+                                <span>
+                                    00:00:00
+                                </span>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4">
+                        </div>
+                        <div class="col-md-3">
+                            <div class="row mb-n5">
+                                <div class="col-md-6">
+                                    <button type="button"
+                                        class="btn fa-border btn-outline-primary bg-primary text-white rounded-pill m-2 mt-2 mb-2"
+                                        style="width: 150px;"><b>Hotels</b></button>
+
+                                </div>
+                                <div class="col-md-6">
+                                    <button type="button"
+                                        class="btn fa-border btn-outline-primary bg-white text-primary rounded-pill m-2 mt-2 mb-2"
+                                        style="width: 150px;"><b>Flights</b></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                </div>
+
+            </div>
+        </div>
+        <div class="container bg-white">
+            <div class="row">
+                <div class="col-md-3 mt-3 ms-3">
+                    <button type="button" class="btn btn-primary dropdown-toggle text-primary bg-white "
+                        data-bs-toggle="dropdown"><i class="fa fa-location-arrow"></i> <b><span class="">Deals near
+                            </span></button></b></button>
+                    <div class="dropdown-menu">
+                        <a href="" class="dropdown-item">Delhi</a>
+                        <a href="" class="dropdown-item">Mumbai</a>
+
+                    </div>
+                </div>
+                <div class="col-md-6"></div>
+                <div class="col-md-2 mt-3 nav  ms-5">
+                    <button type="button" class="btn fa-border btn-outline-primary  rounded-2"> <b>&nbsp;View
+                            All></b></button>
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div id="deal-card-carousel" class="carousel carousel-dark slide" data-bs-ride="carousel">
+
+                    <div class="carousel-inner align-center padding-top-bottom-20">
+                        <div class="carousel-item active" data-bs-interval="10000">
+
+                            <div class="row row row-cols-1 row-cols-md-3 g-4 align-center">
+
+                                <div class="deal-card">
+                                    <div class="card">
+                                        <img src="hotel-1.avif" class="card-img-top deal-card-img" alt="">
+                                        <div class="card-body position-relative d-flex">
+                                            <div class="card-cont">
+                                                <h5>Shubhas Vilas</h5>
+                                                <p>Delhi</p>
+                                            </div>
+                                            <div class="card-price position-absolute end-0">
+                                                <p class="m-0 mx-2"><s><span>&#8377</span>3500</s></p>
+                                                <p class="m-0 mx-2 text-red fs-5">
+                                                    <strong><span>&#8377</span>1705</strong>
+                                                </p>
+                                                <p class="m-0 mx-2">per night</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="deal-card">
+                                    <div class="card">
+                                        <img src="hotel-2.avif" class="card-img-top deal-card-img" alt="">
+                                        <div class="card-body position-relative d-flex">
+                                            <div class="card-cont">
+                                                <h5>Le ROI</h5>
+                                                <p>Delhi</p>
+                                            </div>
+                                            <div class="card-price position-absolute end-0">
+                                                <p class="m-0 mx-2"><s><span>&#8377</span>3299</s></p>
+                                                <p class="m-0 mx-2 text-red fs-5">
+                                                    <strong><span>&#8377</span>2142</strong>
+                                                </p>
+                                                <p class="m-0 mx-2">per night</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="deal-card">
+                                    <div class="card">
+                                        <img src="hotel-3.jpg" class="card-img-top deal-card-img" alt="">
+                                        <div class="card-body position-relative d-flex">
+                                            <div class="card-cont">
+                                                <h5>Narulas Inn-Bed</h5>
+                                                <p>Delhi</p>
+                                            </div>
+                                            <div class="card-price position-absolute end-0">
+                                                <p class="m-0 mx-2"><s><span>&#8377</span>5999</s></p>
+                                                <p class="m-0 mx-2 text-red fs-5">
+                                                    <strong><span>&#8377</span>3238</strong>
+                                                </p>
+                                                <p class="m-0 mx-2">per night</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+
+                        </div>
+                        <div class="carousel-item" data-bs-interval="2000">
+
+                            <div class="row row-cols-1 row-cols-md-3 g-4 align-center">
+
+                                <div class="deal-card">
+                                    <div class="card">
+                                        <img src="hotel-4.avif" class="card-img-top deal-card-img" alt="">
+                                        <div class="card-body position-relative d-flex">
+                                            <div class="card-cont">
+                                                <h5>Hotel Lemonade</h5>
+                                                <p>Alwar</p>
+                                            </div>
+                                            <div class="card-price position-absolute end-0">
+                                                <p class="m-0 mx-2"><s><span>&#8377</span>4000</s></p>
+                                                <p class="m-0 mx-2 text-red fs-5">
+                                                    <strong><span>&#8377</span>3364</strong>
+                                                </p>
+                                                <p class="m-0 mx-2">per night</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="deal-card">
+                                    <div class="card">
+                                        <img src="hotel-5.avif" class="card-img-top deal-card-img" alt="">
+                                        <div class="card-body position-relative d-flex">
+                                            <div class="card-cont">
+                                                <h5>Hotel Burj haveli</h5>
+                                                <p>Alwar</p>
+                                            </div>
+                                            <div class="card-price position-absolute end-0">
+                                                <p class="m-0 mx-2"><s><span>&#8377</span>3500</s></p>
+                                                <p class="m-0 mx-2 text-red fs-5">
+                                                    <strong><span>&#8377</span>2191</strong>
+                                                </p>
+                                                <p class="m-0 mx-2">per night</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="deal-card">
+                                    <div class="card">
+                                        <img src="hotel-6.avif" class="card-img-top deal-card-img" alt="">
+                                        <div class="card-body position-relative d-flex">
+                                            <div class="card-cont">
+                                                <h5>Hotel Goyal Palace</h5>
+                                                <p>Jaipur</p>
+                                            </div>
+                                            <div class="card-price position-absolute end-0">
+                                                <p class="m-0 mx-2"><s><span>&#8377</span>8000</s></p>
+                                                <p class="m-0 mx-2 text-red fs-5">
+                                                    <strong><span>&#8377</span>2587</strong>
+                                                </p>
+                                                <p class="m-0 mx-2">per night</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#deal-card-carousel"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#deal-card-carousel"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-- Popular Flight Routes -->
+    <div class="container my-4">
+        <div class="row">
+            <div class="col-md-12">
+                <img src="footerimg.webp" width="100%" alt="">
+            </div>
+        </div>
+    </div>
+
+    <div class="container p-4 main-box">
+        <div class="row">
+            <div class="col-md-12 mt-1 ms-2">
+                <h4>Popular Flight Routes</h4>
+            </div>
+        </div>
+        <div class="row mt-2 ms-2">
+            <div class="col-md-4">
+                <div class="row">
+                    <div class="col-md-1 ">
+                        <h3><i class="fa fa-plane"></i></h3>
+                    </div>
+                    <div class="col-md-11">
+                        Delhi Flights
+                        <h6> From: <a href="" style="text-decoration: none;">Mumbai, Pune, Bangalore, Goa </a></h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="row">
+                    <div class="col-md-1 ">
+                        <h3><i class="fa fa-plane"></i></h3>
+                    </div>
+                    <div class="col-md-11">
+                        Mumbai Flights
+                        <h6> From: <a href="" style="text-decoration: none;"> Delhi, Goa, Bangalore, Chennai</a></h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="row">
+                    <div class="col-md-1 ">
+                        <h3><i class="fa fa-plane"></i></h3>
+                    </div>
+                    <div class="col-md-11">
+                        Bangalore Flights
+                        <h6> From: <a href="" style="text-decoration: none;">Mumbai, Kolkata, Bangalore, Pune </a></h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row ms-2">
+            <div class="col-md-4">
+                <div class="row">
+                    <div class="col-md-1 ">
+                        <h3><i class="fa fa-plane"></i></h3>
+                    </div>
+                    <div class="col-md-11">
+                        Goa Flights
+                        <h6> From: <a href="" style="text-decoration: none;">Mumbai, Pune, Delhi, Indore </a></h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="row">
+                    <div class="col-md-1 ">
+                        <h3><i class="fa fa-plane"></i></h3>
+                    </div>
+                    <div class="col-md-11">
+                        Jaipur Flights
+                        <h6> From: <a href="" style="text-decoration: none;">Mumbai, Delhi, Bangalore, Goa </a></h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="row">
+                    <div class="col-md-1 ">
+                        <h3><i class="fa fa-plane"></i></h3>
+                    </div>
+                    <div class="col-md-11">
+                        Kolkata Flights
+                        <h6> From: <a href="" style="text-decoration: none;">Mumbai, Delhi, Bangalore, Pune </a></h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row ms-2">
+            <div class="col-md-4">
+                <div class="row">
+                    <div class="col-md-1 ">
+                        <h3><i class="fa fa-plane"></i></h3>
+                    </div>
+                    <div class="col-md-11">
+                        Pune Flights
+                        <h6> From: <a href="" style="text-decoration: none;">Delhi, Kolkata, Nagpur, Goa </a></h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="row">
+                    <div class="col-md-1 ">
+                        <h3><i class="fa fa-plane"></i></h3>
+                    </div>
+                    <div class="col-md-11">
+                        Hyderabad Flights
+                        <h6> From: <a href="" style="text-decoration: none;">Mumbai, Delhi, Bangalore, Kolkata </a></h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="row">
+                    <div class="col-md-1 ">
+                        <h3><i class="fa fa-plane"></i></h3>
+                    </div>
+                    <div class="col-md-11">
+                        Chennai Flights
+                        <h6> From: <a href="" style="text-decoration: none;">Mumbai, Hyderabad, Goa, Pune </a></h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row ms-2">
+            <div class="col-md-4">
+                <div class="row">
+                    <div class="col-md-1 ">
+                        <h3><i class="fa fa-plane"></i></h3>
+                    </div>
+                    <div class="col-md-11">
+                        Delhi Flights
+                        <h6> From: <a href="" style="text-decoration: none;">Mumbai, Pune, Bangalore, Goa </a></h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="row">
+                    <div class="col-md-1 ">
+                        <h3><i class="fa fa-plane"></i></h3>
+                    </div>
+                    <div class="col-md-11">
+                        Mumbai Flights
+                        <h6> From: <a href="" style="text-decoration: none;"> Delhi, Goa, Bangalore, Chennai</a></h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="row">
+                    <div class="col-md-1 ">
+                        <h3><i class="fa fa-plane"></i></h3>
+                    </div>
+                    <div class="col-md-11">
+                        Bangalore Flights
+                        <h6> From: <a href="" style="text-decoration: none;">Mumbai, Kolkata, Bangalore, Pune </a></h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Popular Flight Routes Ends -->
+    <div class="container mt-3">
+        <div class="col-md-12">
+            <h4><b>Flight Booking FAQs</b></h4>
+        </div>
+    </div>
+    <div class="container mt-3 main-box2">
+        <ul class="list-group m-3">  
+			<li class="list-group-item" data-bs-toggle="collapse" data-bs-target="#python">
+				<b>What are the advantages of online flight booking? </b>
+				<div id="python" class="collapse">
+					Through online air ticket booking you can easily compare prices of multiple airlines to get your air tickets at lowest rates. Also, it is easy to do <span style="color: blue;"">online flight booking </span> as multiple payment options are available on websites like Goibibo.
+				</div>
+			</li>	
+    </div>
+    <div class="container mt-3 main-box2">
+        <ul class="list-group m-3">  
+			<li class="list-group-item" data-bs-toggle="collapse" data-bs-target="#python1">
+                <b>When should I book to get best flight ticket prices?  </b>
+				<div id="python1" class="collapse">
+                <br>
+                For best flight ticket prices and flight ticket offers, it is recommended to book at least 3 to 4 weeks in advance for domestic air tickets. For international flight ticket it is recommended to book at least 7 to 8 weeks in advance, so that you can get the best flight ticket prices.
+				</div>
+			</li>	
+    </div>
+    <div class="container mt-3 main-box2">
+        <ul class="list-group m-3">  
+			<li class="list-group-item" data-bs-toggle="collapse" data-bs-target="#python2">
+                <b>How can I book flight tickets online?  </b>
+				<div id="python2" class="collapse">
+                <br>
+                With the help of Goibibo, you can easily book both domestic flight tickets and  <span style="color: blue;"">international air tickets</span>  in simple steps within a few seconds.
+				</div>
+			</li>	
+    </div>
+    <div class="container mt-3 main-box2">
+        <ul class="list-group m-3">  
+			<li class="list-group-item" data-bs-toggle="collapse" data-bs-target="#python3">
+                <b>Why should I make a flight booking from Goibibo?  </b>
+				<div id="python3" class="collapse">
+                <br>
+                Along with an easy flight booking process,  <span style="color: blue;"">Goibibo offers</span>  various discounts, instant EMI options and credit/ debit card related offers on flight booking. By availing such benefits, you can book air tickets at reasonable prices.
+				</div>
+			</li>	
+    </div>
+    <div class="container mt-3 main-box2">
+        <ul class="list-group m-3">  
+			<li class="list-group-item" data-bs-toggle="collapse" data-bs-target="#python4">
+                <b>In how much time, my flight booking will get confirmed?  </b>
+				<div id="python4" class="collapse">
+                <br>
+                After completing the air ticket booking process on Goibibo, you will get an instant confirmation mail and a message on the registered number and email id respectively.
+				</div>
+			</li>	
+    </div>
+    <div class="container mt-3 main-box2">
+        <ul class="list-group m-3">  
+			<li class="list-group-item" data-bs-toggle="collapse" data-bs-target="#python4">
+                <b>What are some of the popular flight routes?</b>
+				<div id="python4" class="collapse">
+                <br>
+                <br>
+                <br>
+                Some of the popular airlines for domestic travel are:
+                <br>
+                <a style="text-decoration: none;" href="">-Indigo Airlines</a>
+                <br>
+                <a style="text-decoration: none;" href="">-Air India Airlines</a>
+                <br>
+                <a style="text-decoration: none;" href="">-SpiceJet Airlines</a>
+                <br>
+                <a style="text-decoration: none;" href="">-GoAir Airlines</a>
+                <br>
+                <a style="text-decoration: none;" href="">-AirAsia Airlines</a>
+                <br>
+                Some of the popular airlines for international travel are:
+                <br>
+                <a style="text-decoration: none;" href="">-Emirates Airlines</a>
+                <br>
+                <a style="text-decoration: none;" href="">-Singapore Airlines</a>
+                <br>
+                <a style="text-decoration: none;" href="">-Thai Airlines</a>
+                <br>
+                <a style="text-decoration: none;" href="">-Lufthansa Airlines</a>
+                <br>
+                <a style="text-decoration: none;" href="">-Qatar Airlines</a>
+				</div>
+			</li>	
+    </div>
+    <div class="container mt-3 main-box2">
+        <ul class="list-group m-3">  
+			<li class="list-group-item" data-bs-toggle="collapse" data-bs-target="#python5">
+                <b>Which are the popular airlines for air travel?</b>
+				<div id="python5" class="collapse">
+                <br>
+                Some of the popular airlines for domestic travel are:
+                <br>
+                <a style="text-decoration: none;" href="">-Indigo Airlines</a>
+                <br>
+                <a style="text-decoration: none;" href="">-Air India Airlines</a>
+                <br>
+                <a style="text-decoration: none;" href="">-SpiceJet Airlines</a>
+                <br>
+                <a style="text-decoration: none;" href="">-GoAir Airlines</a>
+                <br>
+                <a style="text-decoration: none;" href="">-AirAsia Airlines</a>
+                <br>
+                Some of the popular airlines for international travel are:
+                <br>
+                <a style="text-decoration: none;" href="">-Emirates Airlines</a>
+                <br>
+                <a style="text-decoration: none;" href="">-Singapore Airlines</a>
+                <br>
+                <a style="text-decoration: none;" href="">-Thai Airlines</a>
+                <br>
+                <a style="text-decoration: none;" href="">-Lufthansa Airlines</a>
+                <br>
+                <a style="text-decoration: none;" href="">-Qatar Airlines</a>
+				</div>
+			</li>	
+    </div>
+    <!-- Footer -->
+    <div class="container-fluid mt-4 main-box">
+            <div class="container">
+                <div class="row p-3">
+                   <div class="col-md-3">
+                    <strong>OUR PRODUCTS</strong>
+                    <br><br>
+                    Domestic Hotels
+                    <br>
+                    International Hotels
+                    <br>
+                    Domestic Flights
+                    <br>
+                    International Flights
+                    <br>
+                    Multi-City Flights
+                    <br>
+                    Couple Friendly Hotels
+                    <br>
+                    Nearby Getaways
+                    <br>
+                    Bus Booking
+                    <br>
+                    Cab Booking
+                    <br>
+                    Airport Cabs Booking
+                    <br>
+                    Outstation Cabs Booking
+                    <br>
+                    Train Booking
+                    <br>
+                    Go Stays
+                    <br>
+                    Trip Money
+                    <br>
+                    Goibibo Advertising Solutions
+                   </div>
+                   <div class="col-md-3">
+                    <strong>ABOUT US</strong>
+                    <br><br>
+                    About Us
+                    <br>
+                    Investor Relations
+                    <br>
+                    Management
+                    <br>
+                    Terms of Services
+                    <br>
+                    User Agreement
+                    <br>
+                    Privacy
+                    <br>
+                    Careers
+                    <br>
+                    YouTube Channel
+                    <br>
+                    Technology@Goibibo
+                    <br>
+                    Customer Support
+                    <br>
+                    Facebook page
+                    <br>
+                    Twitter Handle
+                   </div>
+                   <div class="col-md-3">
+                    <strong>TRAVEL ESSENTIALS</strong>
+                    <br><br>
+                    PNR Status
+                    <br>
+                    Offers
+                    <br>
+                    Airline Routes
+                    <br>
+                    Train Running Status
+                   </div>
+                   <div class="col-md-3">
+                    <strong>MORE LINKS</strong>
+                    <br><br>
+                    Cheap Flights
+                    <br>
+                    Hotels Near Me
+                    <br>
+                    My Bookings
+                    <br>
+                    Cancellations
+                    <br>
+                    My Account
+                    <br>
+                    Wallet
+                    <br>
+                    Advertising with Us
+                   </div>
+                   <hr>
+                </div>
+            </div>
+        <div class="container">
+            <div class="row">
+              <div class="col-md-12">
+                <p class="text-muted">
+                    <b>Popular Flight Sectors</b> &nbsp; 
+                    Kolkata to Delhi Flight |
+                    Hyderabad to Delhi Flight |
+                    Chennai to Hyderabad Flight |
+                    Delhi to Guwahati Flight |
+                    Lucknow to Delhi Flight |
+                    Nagpur to Mumbai Flight |
+                    Ranchi to Delhi Flight |
+                    Ahmedabad to Goa Flight |
+                    Mumbai to Chandigarh Flight |
+                    Pune to Kolkata Flight |
+                    Bangalore to Bhubaneshwar Flight |
+                    Bangalore to Guwahati Flight |
+                    Chennai to Goa Flight |
+                    Chennai to Kolkata Flight |
+                    Delhi to Jaipur Flight |
+                    Delhi to Leh Flight |
+                    Hyderabad to Goa Flight |
+                    Bangalore to Ranchi Flight |
+                    Delhi to Bagdogra Flight |
+                    Srinagar to Delhi Flight
+                </p>
+              </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <p class="text-muted"><b>Top Routes</b> &nbsp; Chandigarh to Delhi Flight |
+                        Delhi to Bhopal Flight |
+                        Delhi to Dehradun Flight |
+                        Delhi to Udaipur Flight |
+                        Hyderabad to Tirupati Flight |
+                        Kolkata to Chennai Flight |
+                        Kolkata to Guwahati Flight |
+                        Mumbai to Amritsar Flight |
+                        Mumbai to Dehradun Flight |
+                        Indore to Goa Flight |
+                        Jaipur to Delhi Flight |
+                        Kolkata to Bagdogra Flight |
+                        Patna to Bangalore Flight |
+                        Varanasi to Delhi Flight |
+                        Ahmedabad to Kolkata Flight |
+                        Delhi to Gorakhpur Flight |
+                        Guwahati to Kolkata Flight |
+                        Indore to Bangalore Flight |
+                        Jaipur to Pune Flight |
+                        Mumbai to Raipur Flight
+                        </p>
+                </div>
+            </div>
+            <div class="row">
+                <p class="text-muted"><b>Popular Domestic Routes</b>&nbsp; 
+                    Patna to Kolkata Flight |
+                    Ranchi to Bangalore Flight |
+                    Patna to Delhi Flight |
+                    Bangalore to Goa Flight |
+                    Delhi to Ranchi Flight |
+                    Pune to Nagpur Flight |
+                    Chennai to Coimbatore Flight |
+                    Delhi to Srinagar Flight |
+                    Goa to Mumbai Flight |
+                    Hyderabad to Bangalore Flight |
+                    Indore to Delhi Flight |
+                    Kolkata to Mumbai Flight |
+                    Mumbai to Nagpur Flight |
+                    Mumbai to Varanasi Flight |
+                    Pune to Goa Flight |
+                    Bangalore to Chennai Flight |
+                    Bangalore to Jaipur Flight |
+                    Chennai to Bangalore Flight |
+                    Chennai to Madurai Flight |
+                    Delhi to Indore Flight</p>
+            </div>
+            <div class="row">
+                <p class="text-muted"><b>Top Sectors</b> &nbsp; 
+                Delhi to Jammu Flight |
+                Delhi to Varanasi Flight |
+                Hyderabad to Chennai Flight |
+                Hyderabad to Mumbai Flight |
+                Jaipur to Mumbai Flight |
+                Bangalore to Srinagar Flight |
+                Bhopal to Chennai Flight |
+                Chandigarh to Mumbai Flight |
+                Coimbatore to Ahmedabad Flight |
+                Coimbatore to Bangalore Flight |
+                Coimbatore to Mumbai Flight |
+                Delhi to Chandigarh Flight |
+                Delhi to Coimbatore Flight |
+                Delhi to Raipur Flight |
+                Hyderabad to Kolkata Flight |
+                Hyderabad to Vijaywada Flight |
+                Lucknow to Ahmedabad Flight |
+                Madurai to Chennai Flight</p>
+            </div>
+            <div class="row">
+               <p  class="text-muted"><b>Important Routes</b> &nbsp; 
+               Madurai to Hyderabad Flight |
+               Mumbai to Srinagar Flight |
+               Pune to Ranchi Flight |
+               Raipur to Hyderabad Flight |
+               Raipur to Mumbai Flight |
+               Bhopal to Hyderabad Flight |
+               Bhubaneshwar to Chennai Flight |
+               Chennai to Nagpur Flight |
+               Chennai to Port Blair Flight |
+               Cochin to Chennai Flight |
+               Delhi to Mangalore Flight |
+               Hyderabad to Nagpur Flight |
+               Jammu to Delhi Flight |
+               Kolkata to Aizawl Flight |
+               Lucknow to Hyderabad Flight |
+               Udaipur to Delhi Flight |
+               Agartala to Delhi Flight |
+               Bangalore to Imphal Flight |
+               Imphal to Guwahati Flight |
+               Imphal to Kolkata Flight |
+               Indore to Raipur Flight |
+               Kozhikode to Chennai Flight |
+               Mumbai to Imphal Flight</p>
+            </div>
+            <div class="row">
+                <p class="text-muted"><b>Trending Domestic Routes</b> &nbsp; 
+                Ahmedabad to Mumbai Flight |
+                Bagdogra to Kolkata Flight |
+                Bangalore to Udaipur Flight |
+                Bhopal to Bangalore Flight |
+                Bhubaneshwar to Mumbai Flight |
+                Chandigarh to Chennai Flight |
+                Chennai to Jaipur Flight |
+                Delhi to Vadodara Flight |
+                Goa to Pune Flight |
+                Hyderabad to Coimbatore Flight |
+                Hyderabad to Patna Flight |
+                Jaipur to Bangalore Flight |
+                Lucknow to Kolkata Flight |
+                Mangalore to Bangalore Flight |
+                Mumbai to Coimbatore Flight |
+                Mumbai to Indore Flight |
+                Mumbai to Rajkot Flight |
+                Mumbai to Surat Flight |
+                Mumbai to Vijaywada Flight |
+                Pune to Chennai Flight |
+                Bhubaneshwar to Kolkata Flight |
+                Delhi to Kozhikode Flight |
+                Mumbai to Jodhpur Flight |
+                Ranchi to Mumbai Flight |
+                Vadodara to Chennai Flight</p>
+            </div>
+            <div class="row">
+                <p  class="text-muted"><b>New Udaan Sectors</b> &nbsp; 
+                Guwahati to Rupsi Flight |
+                Rupsi to Kolkata Flight |
+                Guwahati to Agartala Flight |
+                Agartala to Dibrugarh Flight |
+                Dibrugarh to Agartala Flight |
+                Agartala to Guwahati Flight |
+                Guwahati to Pasighat Flight |
+                Pasighat to Shillong Flight |
+                Shillong to Pasighat Flight |
+                Pasighat to Guwahati Flight</p>
+            </div>
+            <hr>
+        </div>
+        <!-- main footer -->
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <b>FOLLOW US</b><br>
+                    <i class="fa fa-2x text-muted fa-facebook-square"></i> &nbsp;
+                    <i class="fa fa-2x text-muted fa-twitter"></i>&nbsp;
+                    <i class="fa fa-2x text-muted fa-youtube-play"></i>
+                </div>
+                <div class="col-md-5">
+                    <b>Book Tickets faster. Download our mobile Apps</b><br>
+                    <img src="playstore.png"> &nbsp;
+                    <img src="appstore.png" width="31%">
+                </div>
+                <div class="col-md-4 mt-2">
+                    <img src="mastercard.jpg" width="20%"> &nbsp;
+                    <img src="visa.jpg" width="20%"> &nbsp;
+                    <img src="rupay.png" width="20%"> &nbsp;
+                    <img src="iata.png" width="20%">
+                    <br><br>
+                </div>
+                <hr>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 foot">
+                        <img src="makemytrip.webp" width="30%"> &nbsp;
+                        <img src="redbus.png" width="30%">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+
+</html>
